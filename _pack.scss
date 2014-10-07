@@ -1,0 +1,152 @@
+// *************************************
+//
+//   #PACK
+//
+// *************************************
+
+// The pack object simply causes any number of elements pack up horizontally to
+// automatically fill an equal, fluid width of their parent.
+
+// Predefine the variables below in order to alter and enable specific features.
+$tree-pack-namespace:      $tree-namespace !default;
+
+$tree-pack-gutter:         $tree-base-spacing-unit !default;
+$tree-pack-gutter--tiny:     quarter($tree-pack-gutter) !default;
+$tree-pack-gutter--small:      halve($tree-pack-gutter) !default;
+$tree-pack-gutter--large:     double($tree-pack-gutter) !default;
+$tree-pack-gutter--huge:   quadruple($tree-pack-gutter) !default;
+
+$tree-enable-pack--tiny:   false !default;
+$tree-enable-pack--small:  false !default;
+$tree-enable-pack--large:  false !default;
+$tree-enable-pack--huge:   false !default;
+$tree-enable-pack--rev:    false !default;
+$tree-enable-pack--middle: false !default;
+$tree-enable-pack--bottom: false !default;
+$tree-enable-pack--auto:   false !default;
+
+
+
+
+
+// 1. Fill all available space.
+// 2. Cause children to be automatically equally sized.
+.#{$tree-pack-namespace}pack,
+%#{$tree-pack-namespace}pack {
+    width: 100%; // [1]
+    display: table;
+    table-layout: fixed; // [2]
+}
+
+    // Cause children to adopt table-like structure.
+    .#{$tree-pack-namespace}pack__item,
+    %#{$tree-pack-namespace}pack__item {
+        display: table-cell;
+
+        @if ($tree-enable-pack--middle == true) {
+
+            // All items are aligned to the middles of each other.
+
+            .#{$tree-pack-namespace}pack--middle > &,
+            %#{$tree-pack-namespace}pack--middle > & {
+                vertical-align: middle;
+            }
+
+        }
+
+        @if ($tree-enable-pack--bottom == true) {
+
+            // All items are aligned to the bottoms of each other.
+
+            .#{$tree-pack-namespace}pack--bottom > &,
+            %#{$tree-pack-namespace}pack--bottom > & {
+                vertical-align: bottom;
+            }
+
+        }
+
+    }
+
+
+
+
+
+@if ($tree-enable-pack--auto == true) {
+
+    // Cause children to pack up into available space, but not equally sized.
+
+    .#{$tree-pack-namespace}pack--auto,
+    %#{$tree-pack-namespace}pack--auto {
+        table-layout: auto;
+    }
+
+}
+
+
+
+
+
+@if ($tree-enable-pack--tiny == true) {
+
+    // Tiny gutters between items.
+
+    .#{$tree-pack-namespace}pack--tiny,
+    %#{$tree-pack-namespace}pack--tiny {
+        border-spacing: $tree-pack-gutter--tiny;
+    }
+
+}
+
+@if ($tree-enable-pack--small == true) {
+
+    // Small gutters between items.
+
+    .#{$tree-pack-namespace}pack--small,
+    %#{$tree-pack-namespace}pack--small {
+        border-spacing: $tree-pack-gutter--small;
+    }
+
+}
+
+@if ($tree-enable-pack--large == true) {
+
+    // Large gutters between items.
+
+    .#{$tree-pack-namespace}pack--large,
+    %#{$tree-pack-namespace}pack--large {
+        border-spacing: $tree-pack-gutter--large;
+    }
+
+}
+
+@if ($tree-enable-pack--huge == true) {
+
+    // Huge gutters between items.
+
+    .#{$tree-pack-namespace}pack--huge,
+    %#{$tree-pack-namespace}pack--huge {
+        border-spacing: $tree-pack-gutter--huge;
+    }
+
+}
+
+
+
+
+
+@if ($tree-enable-pack--rev == true) {
+
+    // Reversed order packs.
+
+    .#{$tree-pack-namespace}pack--rev,
+    %#{$tree-pack-namespace}pack--rev {
+        direction: rtl;
+
+        > .#{$tree-pack-namespace}pack__item,
+        > %#{$tree-pack-namespace}pack__item {
+            direction: ltr;
+        }
+
+    }
+
+}
