@@ -7,8 +7,8 @@ to automatically fill an equal, fluid width of their parent.
 
 The Pack object depends on two other module:
 
-[settings.defaults](https://github.com/treeframework/settings.defaults)
-[tools.functions](https://github.com/treeframework/tools.functions)
+* [settings.defaults](https://github.com/treeframework/settings.defaults)
+* [tools.functions](https://github.com/treeframework/tools.functions)
 
 If you install the Pack object using Bower, you will get these dependencies at
 the same time. If not using Bower, please be sure to install and `@import` these
@@ -21,15 +21,21 @@ Git Submodule, or copy and paste.
 
 ### Install using Bower:
 
-    $ bower install --save tree-pack
+```sh
+$ bower install --save tree-pack
+```
 
 Once installed, `@import` into your project in its Object layer:
 
-    @import "bower_components/tree-pack/object.pack";
+```scss
+@import "bower_components/tree-pack/object.pack";
+```
 
 ### Install as a Git Submodule:
 
-    $ git submodule add git@github.com:treeframework/object.pack.git
+```sh
+$ git submodule add git@github.com:treeframework/object.pack.git
+```
 
 ### Install via file download
 
@@ -41,17 +47,19 @@ Objects layer.
 
 Basic usage of the Pack object uses the required classes:
 
-    <div class="pack">
-        <div class="pack__item">
-            Foo
-        </div>
-        <div class="pack__item">
-            Bar
-        </div>
-        <div class="pack__item>
-            Baz
-        </div>
+```html
+<div class="pack">
+    <div class="pack__item">
+        Foo
     </div>
+    <div class="pack__item">
+        Bar
+    </div>
+    <div class="pack__item>
+        Baz
+    </div>
+</div>
+```
 
 The only valid children of the `.pack` node are `.pack__item`s.
 
@@ -68,17 +76,19 @@ Other, optional classes can supplement the required base classes:
 
 For example:
 
-    <div class="pack  pack--small  pack-rev">
-        <div class="pack__item>
-            Foo
-        </div>
-        <div class="pack__item>
-            Bar
-        </div>
-        <div class="pack__item>
-            Baz
-        </div>
+```html
+<div class="pack  pack--small  pack-rev">
+    <div class="pack__item>
+        Foo
     </div>
+    <div class="pack__item>
+        Bar
+    </div>
+    <div class="pack__item>
+        Baz
+    </div>
+</div>
+```
 
 ## Credits
 
