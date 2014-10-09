@@ -78,13 +78,13 @@ For example:
 
 ```html
 <div class="pack  pack--small  pack-rev">
-    <div class="pack__item>
+    <div class="pack__item">
         Foo
     </div>
-    <div class="pack__item>
+    <div class="pack__item">
         Bar
     </div>
-    <div class="pack__item>
+    <div class="pack__item">
         Baz
     </div>
 </div>
