@@ -16,6 +16,7 @@ $tree-pack-gutter--small:      halve($tree-pack-gutter) !default;
 $tree-pack-gutter--large:     double($tree-pack-gutter) !default;
 $tree-pack-gutter--huge:   quadruple($tree-pack-gutter) !default;
 
+$tree-enable-pack--auto:   false !default;
 $tree-enable-pack--tiny:   false !default;
 $tree-enable-pack--small:  false !default;
 $tree-enable-pack--large:  false !default;
@@ -23,7 +24,6 @@ $tree-enable-pack--huge:   false !default;
 $tree-enable-pack--rev:    false !default;
 $tree-enable-pack--middle: false !default;
 $tree-enable-pack--bottom: false !default;
-$tree-enable-pack--auto:   false !default;
 
 
 
