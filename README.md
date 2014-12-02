@@ -55,7 +55,7 @@ Basic usage of the Pack object uses the required classes:
     <div class="pack__item">
         Bar
     </div>
-    <div class="pack__item>
+    <div class="pack__item">
         Baz
     </div>
 </div>
