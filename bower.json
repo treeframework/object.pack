@@ -1,22 +1,17 @@
 {
   "name": "tree-pack",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "homepage": "https://github.com/treeframework/object.pack",
-  "authors": [
-    "Harry Roberts <harry@csswizardry.com>",
-    "Ilia Kolev <info@iliakolev.com>"
-  ],
-  "description": "Cause items to pack up to automatically fill their parent.",
+  "author": "Ilia Kolev <info@iliakolev.com>",
+  "description": "A simple layout tool.",
   "main": "_object.pack.scss",
-  "ignore": [
-    "*.md"
-  ],
   "keywords": [
+      "oocss",
     "css"
   ],
-  "license": "Apache",
+  "license": "MIT",
   "dependencies": {
-    "tree-defaults": "~0.2.4",
-    "tree-functions": "~0.2.4"
+    "tree-defaults": "~0.2.5",
+    "tree-functions": "~0.2.5"
   }
 }
