@@ -16,19 +16,25 @@ dependencies in the relevant way.
 
 ## Installation
 
-The recommended way to install is Bower, but you can install Pack module via a
-Git Submodule, or copy and paste.
+The recommended way to install is Bower, but you can install Pack module via
+npm, Git Submodule, or copy and paste.
 
 ### Install using Bower:
 
 ```sh
-$ bower install --save tree-pack
+$ bower install tree-pack --save
 ```
 
 Once installed, `@import` into your project in its Object layer:
 
 ```scss
 @import "bower_components/tree-pack/object.pack";
+```
+
+### Install using npm:
+
+```sh
+$ npm install tree-pack --save
 ```
 
 ### Install as a Git Submodule:
