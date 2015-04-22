@@ -1,7 +1,7 @@
 {
   "name": "tree-pack",
   "description": "A simple layout tool.",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "author": "Ilia Kolev <info@iliakolev.com>",
   "bugs": {
     "url": "https://github.com/treeframework/object.pack/issues"
@@ -12,8 +12,8 @@
   },
   "homepage": "https://github.com/treeframework/object.pack",
   "keywords": [
-    "oocss",
-    "css"
+    "css",
+    "oocss"
   ],
   "license": "MIT",
   "main": "_object.pack.scss",
