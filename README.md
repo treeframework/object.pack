@@ -45,7 +45,7 @@ $ git submodule add git@github.com:treeframework/object.pack.git
 
 ### Install via file download
 
-The least recommended option dor installation is to simply download
+The least recommended option for installation is to simply download
 `_object.pack.scss` into your project and `@import` it into your project in its
 Objects layer.
 
