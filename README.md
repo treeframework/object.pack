@@ -1,23 +1,22 @@
 # Pack
 
-The Pack object simply causes any number of elements pack up horizontally
+The `pack` object simply causes any number of elements pack up horizontally
 to automatically fill an equal, fluid width of their parent.
 
 ## Dependencies
 
-The Pack object depends on two other module:
+The `pack` object depends on two other modules:
 
 * [settings.defaults](https://github.com/treeframework/settings.defaults)
 * [tools.functions](https://github.com/treeframework/tools.functions)
 
-If you install the Pack object using Bower, you will get these dependencies at
-the same time. If not using Bower, please be sure to install and `@import` these
-dependencies in the relevant way.
+If you install the `pack` object using Bower or npm, you will get these 
+dependencies at the same time. If not using Bower or npm, please be sure to 
+install and `@import` these dependencies in the relevant way.
 
 ## Installation
 
-The recommended way to install is Bower, but you can install Pack module via
-npm, Git Submodule, or copy and paste.
+You can install `pack` module via Bower, npm, or copy and paste.
 
 ### Install using Bower:
 
@@ -35,12 +34,6 @@ Once installed, `@import` into your project in its Object layer:
 
 ```sh
 $ npm install tree-pack --save
-```
-
-### Install as a Git Submodule:
-
-```sh
-$ git submodule add git@github.com:treeframework/object.pack.git
 ```
 
 ### Install via file download
