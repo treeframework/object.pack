@@ -70,8 +70,8 @@ $tree-enable-pack--bottom:   false !default;
 
 // 1. Fill all available space.
 // 2. Cause children to be automatically equally sized.
-.#{$tree-pack-namespace}o-pack,
-%#{$tree-pack-namespace}o-pack {
+
+.#{$tree-pack-namespace}o-pack {
     width: 100%; // [1]
     display: table;
     table-layout: fixed; // [2]
@@ -81,16 +81,16 @@ $tree-enable-pack--bottom:   false !default;
     // Cause children to adopt table-like structure.
     // =========================================================================
 
-    .#{$tree-pack-namespace}o-pack__item,
-    %#{$tree-pack-namespace}o-pack__item {
+    .#{$tree-pack-namespace}o-pack__item {
         display: table-cell;
 
         @if ($tree-enable-pack--middle == true) {
 
+            // Modifier: `o-pack--middle`
             // All items are aligned to the middles of each other.
+            // =================================================================
 
-            .#{$tree-pack-namespace}o-pack--middle > &,
-            %#{$tree-pack-namespace}o-pack--middle > & {
+            .#{$tree-pack-namespace}o-pack--middle > & {
                 vertical-align: middle;
             }
 
@@ -98,10 +98,11 @@ $tree-enable-pack--bottom:   false !default;
 
         @if ($tree-enable-pack--bottom == true) {
 
+            // Modifier: `o-pack--bottom`
             // All items are aligned to the bottoms of each other.
+            // =================================================================
 
-            .#{$tree-pack-namespace}o-pack--bottom > &,
-            %#{$tree-pack-namespace}o-pack--bottom > & {
+            .#{$tree-pack-namespace}o-pack--bottom > & {
                 vertical-align: bottom;
             }
 
@@ -119,8 +120,7 @@ $tree-enable-pack--bottom:   false !default;
     // Cause children to pack up into available space, but not equally sized.
     // =========================================================================
 
-    .#{$tree-pack-namespace}o-pack--auto,
-    %#{$tree-pack-namespace}o-pack--auto {
+    .#{$tree-pack-namespace}o-pack--auto {
         table-layout: auto;
     }
 
@@ -136,8 +136,7 @@ $tree-enable-pack--bottom:   false !default;
     // Tiny gutters between items.
     // =========================================================================
 
-    .#{$tree-pack-namespace}o-pack--tiny,
-    %#{$tree-pack-namespace}o-pack--tiny {
+    .#{$tree-pack-namespace}o-pack--tiny {
         border-spacing: $tree-pack-gutter--tiny;
     }
 
@@ -149,8 +148,7 @@ $tree-enable-pack--bottom:   false !default;
     // Small gutters between items.
     // =========================================================================
 
-    .#{$tree-pack-namespace}o-pack--small,
-    %#{$tree-pack-namespace}o-pack--small {
+    .#{$tree-pack-namespace}o-pack--small {
         border-spacing: $tree-pack-gutter--small;
     }
 
@@ -162,8 +160,7 @@ $tree-enable-pack--bottom:   false !default;
     // Large gutters between items.
     // =========================================================================
 
-    .#{$tree-pack-namespace}o-pack--large,
-    %#{$tree-pack-namespace}o-pack--large {
+    .#{$tree-pack-namespace}o-pack--large {
         border-spacing: $tree-pack-gutter--large;
     }
 
@@ -175,8 +172,7 @@ $tree-enable-pack--bottom:   false !default;
     // Huge gutters between items.
     // =========================================================================
 
-    .#{$tree-pack-namespace}o-pack--huge,
-    %#{$tree-pack-namespace}o-pack--huge {
+    .#{$tree-pack-namespace}o-pack--huge {
         border-spacing: $tree-pack-gutter--huge;
     }
 
@@ -192,12 +188,10 @@ $tree-enable-pack--bottom:   false !default;
     // Reversed order packs.
     // =========================================================================
 
-    .#{$tree-pack-namespace}o-pack--rev,
-    %#{$tree-pack-namespace}o-pack--rev {
+    .#{$tree-pack-namespace}o-pack--rev {
         direction: rtl;
 
-        > .#{$tree-pack-namespace}o-pack__item,
-        > %#{$tree-pack-namespace}o-pack__item {
+        > .#{$tree-pack-namespace}o-pack__item {
             direction: ltr;
         }
 
