@@ -78,8 +78,9 @@ $tree-enable-pack--bottom:   false !default;
 }
 
     // Element: `o-pack__item`
-    // Cause children to adopt table-like structure.
     // =========================================================================
+
+    // Cause children to adopt table-like structure.
 
     .#{$tree-pack-namespace}o-pack__item {
         display: table-cell;
@@ -87,8 +88,9 @@ $tree-enable-pack--bottom:   false !default;
         @if ($tree-enable-pack--middle == true) {
 
             // Modifier: `o-pack--middle`
-            // All items are aligned to the middles of each other.
             // =================================================================
+
+            // All items are aligned to the middles of each other.
 
             .#{$tree-pack-namespace}o-pack--middle > & {
                 vertical-align: middle;
@@ -99,8 +101,9 @@ $tree-enable-pack--bottom:   false !default;
         @if ($tree-enable-pack--bottom == true) {
 
             // Modifier: `o-pack--bottom`
-            // All items are aligned to the bottoms of each other.
             // =================================================================
+
+            // All items are aligned to the bottoms of each other.
 
             .#{$tree-pack-namespace}o-pack--bottom > & {
                 vertical-align: bottom;
@@ -117,8 +120,9 @@ $tree-enable-pack--bottom:   false !default;
 @if ($tree-enable-pack--auto == true) {
 
     // Modifier: `o-pack--auto`
-    // Cause children to pack up into available space, but not equally sized.
     // =========================================================================
+
+    // Cause children to pack up into available space, but not equally sized.
 
     .#{$tree-pack-namespace}o-pack--auto {
         table-layout: auto;
@@ -133,8 +137,9 @@ $tree-enable-pack--bottom:   false !default;
 @if ($tree-enable-pack--tiny == true) {
 
     // Modifier: `o-pack--tiny`
-    // Tiny gutters between items.
     // =========================================================================
+
+    // Tiny gutters between items.
 
     .#{$tree-pack-namespace}o-pack--tiny {
         border-spacing: $tree-pack-gutter--tiny;
@@ -145,8 +150,9 @@ $tree-enable-pack--bottom:   false !default;
 @if ($tree-enable-pack--small == true) {
 
     // Modifier: `o-pack--small`
-    // Small gutters between items.
     // =========================================================================
+
+    // Small gutters between items.
 
     .#{$tree-pack-namespace}o-pack--small {
         border-spacing: $tree-pack-gutter--small;
@@ -157,8 +163,9 @@ $tree-enable-pack--bottom:   false !default;
 @if ($tree-enable-pack--large == true) {
 
     // Modifier: `o-pack--large`
-    // Large gutters between items.
     // =========================================================================
+
+    // Large gutters between items.
 
     .#{$tree-pack-namespace}o-pack--large {
         border-spacing: $tree-pack-gutter--large;
@@ -169,8 +176,9 @@ $tree-enable-pack--bottom:   false !default;
 @if ($tree-enable-pack--huge == true) {
 
     // Modifier: `o-pack--huge`
-    // Huge gutters between items.
     // =========================================================================
+
+    // Huge gutters between items.
 
     .#{$tree-pack-namespace}o-pack--huge {
         border-spacing: $tree-pack-gutter--huge;
@@ -185,8 +193,9 @@ $tree-enable-pack--bottom:   false !default;
 @if ($tree-enable-pack--rev == true) {
 
     // Modifier: `o-pack--rev`
-    // Reversed order packs.
     // =========================================================================
+
+    // Reversed order packs.
 
     .#{$tree-pack-namespace}o-pack--rev {
         direction: rtl;
